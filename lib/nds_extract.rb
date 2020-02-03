@@ -24,10 +24,10 @@ def directors_totals(nds)
     current_director = director[:name]
     directors[:movies].each do |movie|
       current_gross += movie[:worldwide_gross]
-  
-  
-  
-  
+    end
+    result[current_director => current_gross]
+  end
+  return result
   nil
 end
 
