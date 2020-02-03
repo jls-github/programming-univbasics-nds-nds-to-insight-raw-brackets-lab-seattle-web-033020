@@ -23,7 +23,7 @@ def directors_totals(nds)
   directors_database.each do |director|
     current_director = director[:name]
     current_gross = 0
-    directors[:movies].each do |movie|
+    director[:movies].each do |movie|
       current_gross += movie[:worldwide_gross]
     end
     result[current_director => current_gross]
