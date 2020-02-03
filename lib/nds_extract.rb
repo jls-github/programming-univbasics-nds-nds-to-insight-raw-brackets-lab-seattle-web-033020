@@ -18,8 +18,12 @@ def directors_totals(nds)
   #
   #
   # Be sure to return the result at the end!
-  
-  
+  current_director = ""
+  current_gross = 0
+  directors_database.each do |director|
+    current_director = director[:name]
+    directors[:movies].each do |movie|
+      current_gross += movie[:worldwide_gross]
   
   
   
